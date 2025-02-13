@@ -18,7 +18,7 @@ public class BlockQueue {
           if (i == 5_000) {
             data[1] = -1; // test the test!
           }
-          queue.put(data);
+          queue.put(data); data = null; // I don't own this!!!
         }
       } catch (InterruptedException ie) {
         System.out.println("Odd, shutdown of producer requested!");

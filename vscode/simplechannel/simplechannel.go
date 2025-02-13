@@ -48,5 +48,4 @@ func main() {
 	shutdown <- true
 	<-shutdown
 	fmt.Println("Main ending")
-
 }
